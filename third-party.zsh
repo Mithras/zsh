@@ -15,7 +15,7 @@ if [ ! -d "$THIRD_PARTY" ]; then
 fi
 
 source "$THIRD_PARTY/powerlevel10k/powerlevel10k.zsh-theme"
-FZF_DEFAULT_OPTS="--exact" source <(fzf --zsh)
+source <(fzf --zsh)
 source "$THIRD_PARTY/fzf-tab/fzf-tab.plugin.zsh"
 source "$THIRD_PARTY/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$THIRD_PARTY/zsh-history-substring-search/zsh-history-substring-search.zsh"

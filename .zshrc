@@ -25,6 +25,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 HISTFILE="$ZDOTDIR/.histfile"
 HISTSIZE=10000
 SAVEHIST=10000
+export FZF_DEFAULT_OPTS="--exact"
 AUTO_NOTIFY_THRESHOLD=10
 AUTO_NOTIFY_IGNORE+=("paru" "code")
 
