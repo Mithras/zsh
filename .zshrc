@@ -31,6 +31,8 @@ AUTO_NOTIFY_IGNORE+=("paru" "code")
 
 # aliases
 alias ls='ls --color --human-readable --group-directories-first --classify'
+alias zsh-config="code $ZDOTDIR"
+alias zsh-bench="$THIRD_PARTY/zsh-bench/zsh-bench"
 
 # bindings
 source "$ZDOTDIR/bindings.zsh"

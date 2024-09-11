@@ -11,6 +11,7 @@ if [ ! -d "$THIRD_PARTY" ]; then
   git clone --depth=1 https://github.com/MichaelAquilina/zsh-auto-notify.git
   git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git
   git clone --depth=1 https://github.com/trapd00r/LS_COLORS.git
+  git clone --depth=1 https://github.com/romkatv/zsh-bench.git
   popd
 fi
 
