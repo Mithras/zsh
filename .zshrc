@@ -25,7 +25,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 HISTFILE="$ZDOTDIR/.histfile"
 HISTSIZE=10000
 SAVEHIST=10000
-export FZF_DEFAULT_OPTS="--exact"
+export FZF_DEFAULT_OPTS="--exact --ignore-case"
 AUTO_NOTIFY_THRESHOLD=10
 AUTO_NOTIFY_IGNORE+=("paru" "code")
 
@@ -33,6 +33,15 @@ AUTO_NOTIFY_IGNORE+=("paru" "code")
 alias ls='ls --color --human-readable --group-directories-first --classify'
 alias zsh-config="code $ZDOTDIR"
 alias zsh-bench="$THIRD_PARTY/zsh-bench/zsh-bench"
+alias meta-lighthouse='nmcli connection up lighthouse passwd-file lighthouse'
+alias meta-vpn='secret-tool lookup setting-name 802-1x ; nmcli connection up FB-VPN --ask'
+alias brave-browser='brave-browser --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias brave-browser-stable='brave-browser-stable --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias google-chrome='google-chrome --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias google-chrome-stable='vs  --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias code-fb='code-fb --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias code-fb-insiders='code-fb-insiders --enable-features=UseOzonePlatform --ozone-platform=wayland'
 
 # bindings
 source "$ZDOTDIR/bindings.zsh"
