@@ -30,7 +30,7 @@ AUTO_NOTIFY_THRESHOLD=10
 AUTO_NOTIFY_IGNORE+=("paru" "code")
 
 # aliases
-alias ls='ls --color --human-readable --group-directories-first --classify'
+alias ls='lsd --human-readable --group-directories-first --classify'
 alias zsh-config="code $ZDOTDIR"
 alias zsh-bench="$THIRD_PARTY/zsh-bench/zsh-bench"
 alias meta-lighthouse='nmcli connection up lighthouse passwd-file lighthouse'
