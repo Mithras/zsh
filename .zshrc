@@ -42,6 +42,9 @@ alias google-chrome-stable='vs  --enable-features=UseOzonePlatform --ozone-platf
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias code-fb='code-fb --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias code-fb-insiders='code-fb-insiders --enable-features=UseOzonePlatform --ozone-platform=wayland'
+alias openvpn-mithras='sudo openvpn ~/Sync/pc/MithrasOpenVPN.ovpn'
+alias ssh-ubuntu1='ssh 192.168.0.6 -l mithras'
+alias ssh-mithras='ssh 192.168.0.2 -l mithras'
 
 # bindings
 source "$ZDOTDIR/bindings.zsh"
