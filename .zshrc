@@ -45,6 +45,10 @@ alias code-fb-insiders='code-fb-insiders --enable-features=UseOzonePlatform --oz
 alias openvpn-mithras='sudo openvpn ~/Sync/pc/MithrasOpenVPN.ovpn'
 alias ssh-ubuntu1='ssh 192.168.0.6 -l mithras'
 alias ssh-mithras='ssh 192.168.0.2 -l mithras'
+alias ssh-rpi01='ssh pi@raspberrypi01 -l mithras'
+alias ssh-rpi02='ssh pi@raspberrypi02 -l mithras'
+alias ssh-mithras-pc='ssh mithras@mithras-pc'
+alias ssh-mithras-pc-new='ssh mithras@mithras-pc-new'
 
 # bindings
 source "$ZDOTDIR/bindings.zsh"
