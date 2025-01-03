@@ -49,6 +49,7 @@ alias ssh-mithras-pc-new='ssh mithras@mithras-pc-new'
 alias ssh-raspberrypi01='ssh 192.168.10.143 -l pi'
 alias ssh-raspberrypi02='ssh 192.168.10.208 -l pi'
 alias nmcli-list='nmcli -f in-use,ssid,bssid,freq,signal,bars dev wifi'
+alias ncmpcpp-mithras='ncmpcpp -c ~/.config/ncmpcpp/config-mithras'
 
 # bindings
 source "$ZDOTDIR/bindings.zsh"
