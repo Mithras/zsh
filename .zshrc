@@ -35,7 +35,7 @@ alias zsh-config="code $ZDOTDIR"
 alias zsh-bench="$THIRD_PARTY/zsh-bench/zsh-bench"
 alias meta-lighthouse='nmcli connection up lighthouse passwd-file lighthouse'
 alias meta-vpn='secret-tool lookup setting-name 802-1x ; nmcli connection up FB-VPN --ask'
-alias meta-update='sudo dnf config-manager setopt cpe-yum-fb-runtime.enabled=0 && sudo dnf config-manager setopt cpe-yum-any.enabled=0 && sudo dnf config-manager setopt cpe-yum-any-noarch.enabled=0 && sudo dnf update --refresh && sudo dnf config-manager unsetopt cpe-yum-fb-runtime.enabled && sudo dnf config-manager unsetopt cpe-yum-any.enabled && sudo dnf config-manager unsetopt cpe-yum-any-noarch.enabled'
+alias meta-update='sudo dnf upgrade-no-meta'
 alias code='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias code-fb='code-fb --enable-features=UseOzonePlatform --ozone-platform=wayland'
 alias code-fb-insiders='code-fb-insiders --enable-features=UseOzonePlatform --ozone-platform=wayland'
@@ -50,6 +50,7 @@ alias ssh-raspberrypi01='ssh 192.168.10.143 -l pi'
 alias ssh-raspberrypi02='ssh 192.168.10.208 -l pi'
 alias nmcli-list='nmcli -f in-use,ssid,bssid,freq,signal,bars dev wifi'
 alias ncmpcpp-mithras='ncmpcpp -c ~/.config/ncmpcpp/config-mithras'
+alias lnav-journalctl='journalctl -f --no-tail -o json -b | lnav'
 
 # bindings
 source "$ZDOTDIR/bindings.zsh"
